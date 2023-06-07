@@ -135,9 +135,11 @@ class GuessingGame{
         if(this.currentRound <= this.rounds.length - 1){
 
             let currentGuess = this.rounds[this.currentRound]
+
             if(currentGuess.num_guess < currentGuess.limit){
                 console.log(`${currentGuess.num_guess} guesses out of ${currentGuess.limit}`);
                 console.log(`your current score: ${this.score}`);
+
                 rl.question(`Guess a number between ${currentGuess.min} and ${currentGuess.max} \n`,
                     answer =>{
                         let num = Number(answer)
@@ -163,6 +165,7 @@ class GuessingGame{
                 this.currentRound++
                 this.guess(rl)
             }
+            
         }
         else{
             // print their score out of this.rounds.length

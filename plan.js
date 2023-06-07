@@ -99,3 +99,6 @@ class GuessingGame
 
 
 //TODO Maybe consider creating a Question class to create a cleaner read line?
+//! Definitely see a common line of code for checking if input is a number or not.
+//! maybe i can plan the question class to to prompt a read line and take a cb on what to do maybe?
+//! Maybe question class can have all these different prompts living in them?
