@@ -59,7 +59,7 @@ class GuessingGame{
                 }
                 else{
                     console.log('An invalid input or a value less than 0 was received, please input a number greater than 0');
-                    this.create_rounds()
+                    this.create_rounds(rl, skip)
                 }
             })
         }
@@ -138,7 +138,7 @@ class GuessingGame{
 
             if(currentGuess.num_guess < currentGuess.limit){
                 console.log(`${currentGuess.num_guess} guesses out of ${currentGuess.limit}`);
-                console.log(`your current score: ${this.score}`);
+                // console.log(`your current score: ${this.score}`);
 
                 rl.question(`Guess a number between ${currentGuess.min} and ${currentGuess.max} \n`,
                     answer =>{
@@ -165,7 +165,7 @@ class GuessingGame{
                 this.currentRound++
                 this.guess(rl)
             }
-            
+
         }
         else{
             // print their score out of this.rounds.length
