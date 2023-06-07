@@ -36,6 +36,7 @@ class GuessingGame{
                     break;
                 default:
                     console.log('Looks like we have an invalid input, please try again.');
+                    rl.close()
                     this.init_game()
 
             }
