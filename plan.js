@@ -96,3 +96,6 @@ class GuessingGame
 
 
 */
+
+
+//TODO Maybe consider creating a Question class to create a cleaner read line?

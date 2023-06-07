@@ -23,7 +23,7 @@ class GuessingGame{
         `Welcome to the guessing game!\n
         Please select an option:\n
         1. Start game\n
-        3. Exit game \n
+        2. Exit game \n
         `, answer =>
         {
             switch(answer){
@@ -197,5 +197,4 @@ class GuessingGame{
     }
 }
 
-let game = new GuessingGame()
-game.init_game()
+module.exports = GuessingGame
